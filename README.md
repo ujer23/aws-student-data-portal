@@ -1,6 +1,6 @@
 # aws-student-data-portal
 
-A full-stack serverless web app to **save and view student data** using AWS Lambda, API Gateway, DynamoDB, and S3.
+A full-stack serverless web app to **save and view student data** using AWS Lambda, API Gateway, DynamoDB, S3, and CloudFront.
 
 ---
 
@@ -9,18 +9,19 @@ A full-stack serverless web app to **save and view student data** using AWS Lamb
 - 📄 Add and view student records (Student ID, Name, Class, Age)
 - ⚙️ Built using AWS Lambda functions (Python) and API Gateway
 - 💾 Stores data securely in DynamoDB
-- 🌐 Hosted on Amazon S3 (static website hosting)
+- 🌐 Hosted on Amazon S3 with **CloudFront CDN**
 - 🔒 CORS-enabled for secure cross-origin requests
+- ⚡ Fast and globally distributed via CloudFront
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, JavaScript, jQuery
-- **Backend:** AWS Lambda (Python)
-- **API Gateway:** REST API
-- **Database:** DynamoDB
-- **Hosting:** Amazon S3
+- **Frontend:** HTML, JavaScript, jQuery  
+- **Backend:** AWS Lambda (Python)  
+- **API Gateway:** REST API  
+- **Database:** DynamoDB  
+- **Hosting:** Amazon S3 + **CloudFront (CDN)**
 
 ---
 
@@ -47,34 +48,35 @@ aws-student-data-portal/
 3. Data is stored in DynamoDB table `studentData`.
 4. On "View all students", frontend calls `getStudents.py` Lambda.
 5. Data is fetched and shown in the table on the webpage.
+6. All static content is delivered globally via **CloudFront** from S3.
 
 ---
 
 ## 📸 Screenshots
 
-### 🔹 Hosted Web App (S3)
-![S3 Hosted Website](https://github.com/user-attachments/assets/265cb3f0-4b2c-4114-b4df-69e9e35f7519)
+### 🔹 Web App UI (S3 + CloudFront)
+![Web App](https://github.com/user-attachments/assets/47e44eb4-cce2-44c5-b695-3ff021c1ad0b)
 
 ### 🔹 Lambda Function: `insertStudent`
-![insertStudent Lambda](https://github.com/user-attachments/assets/04f2cbc6-29f5-4353-a345-580c214d6029)
+![Lambda Insert](https://github.com/user-attachments/assets/61fd776e-4dc1-482b-99ec-c3f9c871b2c0)
 
 ### 🔹 Lambda Function: `getStudents`
-![getStudent Lambda](https://github.com/user-attachments/assets/fb2413c6-1c0d-46da-a07c-9ae0d5c5aa2b)
+![Lambda Get](https://github.com/user-attachments/assets/77a787f9-9615-4888-8a8f-7adf0a673d4a)
 
 ### 🔹 API Gateway Configuration
-![API Gateway](https://github.com/user-attachments/assets/1b1ab186-54e7-4700-857f-e6ee8ce50ab6)
+![API Gateway](https://github.com/user-attachments/assets/4ae72d89-8f7f-450b-8932-6b717cd0954d)
 
 ### 🔹 DynamoDB Table with Sample Data
-![DynamoDB Table](https://github.com/user-attachments/assets/cfa40a8f-475b-4c99-a5c4-14712c304a08)
+![DynamoDB](https://github.com/user-attachments/assets/4c067a05-2e26-4f56-8568-131577d7185f)
 
-### 🔹 Project Architecture Diagram
-![Architecture](https://github.com/user-attachments/assets/3468d1a1-b059-4fca-8155-e5446b319803)
+### 🔹 CloudFront Distribution Setup
+![CloudFront](https://github.com/user-attachments/assets/ce83d7fa-97c4-497a-a605-187b016b8b99)
 
 ---
 
 ## 🔗 Demo
 
-👉 **Live Site (Hosted on S3):** _[Add your S3 website link here]_  
+👉 **Live Site (via CloudFront):** _[Paste your CloudFront URL here]_  
 👉 **GitHub Repo:** [https://github.com/ujer23/aws-student-data-portal](https://github.com/ujer23/aws-student-data-portal)
 
 ---
