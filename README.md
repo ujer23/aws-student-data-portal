@@ -54,23 +54,23 @@ aws-student-data-portal/
 
 ## 📸 Screenshots
 
-### 🔹 Web App UI (S3 + CloudFront)
-![Web App](https://github.com/user-attachments/assets/47e44eb4-cce2-44c5-b695-3ff021c1ad0b)
+### 🧾 1. Project Folder Structure
+![Folder Structure](https://github.com/user-attachments/assets/47e44eb4-cce2-44c5-b695-3ff021c1ad0b)
 
-### 🔹 Lambda Function: `insertStudent`
-![Lambda Insert](https://github.com/user-attachments/assets/61fd776e-4dc1-482b-99ec-c3f9c871b2c0)
+### 🌐 2. Web App UI (CloudFront + S3)
+![Web App](https://github.com/user-attachments/assets/1366x679-cloudfront-s3.png)
 
-### 🔹 Lambda Function: `getStudents`
-![Lambda Get](https://github.com/user-attachments/assets/77a787f9-9615-4888-8a8f-7adf0a673d4a)
-
-### 🔹 API Gateway Configuration
+### ⚙️ 3. API Gateway Configuration
 ![API Gateway](https://github.com/user-attachments/assets/4ae72d89-8f7f-450b-8932-6b717cd0954d)
 
-### 🔹 DynamoDB Table with Sample Data
-![DynamoDB](https://github.com/user-attachments/assets/4c067a05-2e26-4f56-8568-131577d7185f)
+### 🔁 4. Lambda Function: `getStudents`
+![Lambda Get](https://github.com/user-attachments/assets/77a787f9-9615-4888-8a8f-7adf0a673d4a)
 
-### 🔹 CloudFront Distribution Setup
-![CloudFront](https://github.com/user-attachments/assets/ce83d7fa-97c4-497a-a605-187b016b8b99)
+### 📝 5. Lambda Function: `insertStudentData`
+![Lambda Insert](https://github.com/user-attachments/assets/61fd776e-4dc1-482b-99ec-c3f9c871b2c0)
+
+### 💾 6. DynamoDB Table
+![DynamoDB](https://github.com/user-attachments/assets/4c067a05-2e26-4f56-8568-131577d7185f)
 
 ---
 
